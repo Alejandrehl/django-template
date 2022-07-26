@@ -7,6 +7,10 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 1. [Django](https://pypi.org/project/Django/)
 2. [Django Rest Framework](https://www.django-rest-framework.org/)
 
+## Docker
+
+1. Build current Dockerfile: `docker build .`
+
 ## Docker Compose
 
 1. Run all commands through Docker Compose
