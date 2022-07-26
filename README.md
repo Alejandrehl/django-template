@@ -65,3 +65,5 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 1. Needed to pull base images
 2. Rate limits
    - Anonymous: 100/6h
+   - Authenticated: 200/6h
+3. GitHub Actions uses shared IP addresses
