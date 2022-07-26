@@ -2,17 +2,17 @@
 
 Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 
-## Libraries & Dependencies:
+## Libraries & Dependencies :toolbox:
 
 1. [Django](https://pypi.org/project/Django/)
 2. [Django Rest Framework](https://www.django-rest-framework.org/)
 3. [Flake8](https://pypi.org/project/flake8/): Python linter.
 
-## Docker
+## Docker :whale:
 
 1. Build current Dockerfile: `docker build .`
 
-## Docker Compose
+## Docker Compose :octopus:
 
 1. Run all commands through Docker Compose
    - Example: `docker-compose run --rm app sh -c "python manage.py collectstatic"`
