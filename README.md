@@ -22,3 +22,4 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
    - `app` is the name of the service
    - `sh .c` passes in a shell command
    - Command to run inside container
+2. Build Docker Compose: `docker-compose build`
