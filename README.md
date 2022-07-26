@@ -2,6 +2,18 @@
 
 Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 
+## How to start?
+
+1. Clone Repository: `git clone ...`
+2. Build Docker Compose: `docker-compose build`
+3. Start Services: `docker-compose up`
+
+After add a new dependency you need to restart all services:
+
+1. Stop Services: `docker-compose down`
+2. Build Docker Compose: `docker-compose build`
+3. Start Services: `docker-compose up`
+
 ## Libraries & Dependencies :toolbox:
 
 1. [Django](https://pypi.org/project/Django/)
