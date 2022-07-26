@@ -43,3 +43,4 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 
 1. Trigger: Push to Github.
 2. Job: Run unit tests.
+3. Result: Success or fail.
