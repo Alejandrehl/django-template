@@ -28,7 +28,7 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 3. Create Django project: `docker-compose run --rm app sh -c "django-admin startproject app ."`
 4. Start services: `docker-compose up`
 
-# Github Actions
+# Github Actions :rocket:
 
 - Automation tool
 - Similar to Travis-CI, Gitlab CI/CD, Jenkins
@@ -72,3 +72,9 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
    - 200 pulls per 6h all to ourselves
    - More than enough for most projects
 5. Additional plans available
+
+### How to authenticate with Docker Hub?
+
+1. Register account on [https://hub.docker.com/](https://hub.docker.com/)
+2. Use docker login during our job
+3. Add secrets to GitHub project
