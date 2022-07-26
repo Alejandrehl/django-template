@@ -34,13 +34,20 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 - Similar to Travis-CI, Gitlab CI/CD, Jenkins
 - Run jobs when code changes
 - Automate tasks
-- Common uses:
-  1.  Deployment
-  2.  Code linting
-  3.  Unit Tests
+
+### Common uses
+
+1.  Deployment
+2.  Code linting
+3.  Unit Tests
 
 ### How it works?
 
 1. Trigger: Push to Github.
 2. Job: Run unit tests.
 3. Result: Success or fail.
+
+### Pricing
+
+- Charged per minutes
+- 2000 free minutes
