@@ -26,3 +26,4 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
    - Command to run inside container
 2. Build Docker Compose: `docker-compose build`
 3. Create Django project: `docker-compose run --rm app sh -c "django-admin startproject app ."`
+4. Start services: `docker-compose up`
