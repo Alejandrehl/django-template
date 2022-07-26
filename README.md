@@ -32,3 +32,11 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 
 - Automation tool
 - Similar to Travis-CI, Gitlab CI/CD, Jenkins
+- Run jobs when code changes
+- Automate tasks
+
+### Common uses
+
+1. Deployment
+2. Code linting
+3. Unit Tests
