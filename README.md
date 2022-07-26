@@ -99,3 +99,10 @@ Out of the box in Django.
    - Only use `tests.py` or `tests/` directory (not both)
    - Test modules start with `test_`
    - Test directories must contain `__init__.py`
+
+### Test Database
+
+1. Test code that uses the DB
+2. Specific database for tests
+   - Cycle: Runs test -> Clears data -> Runs tests -> Clears data -> etc
+3. Happends for every test (by default)
