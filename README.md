@@ -191,7 +191,7 @@ Example: Sending an email
 - Check result
 - Override authentication
 
-## Using the APIClient
+### Using the APIClient
 
 1. Import `APIClient`
 2. Create client
