@@ -148,3 +148,33 @@ class ViewTests(SimpleTestCase):
 
       self.assertEqual(res, [1, 2, 3, 4, 5])
 ```
+
+### Mocking
+
+- Override or change behavior of dependencies
+- Avoid unintended side effects
+- Isolate code being tested
+
+### Why use mocking?
+
+1.  Avoid relying on external services
+    - Can't guarantee they will be available
+    - Makes tests unpredicable and inconsistent
+2.  Avoid unintended consequences
+    - Accidentally sending emails
+    - Overloading external services
+
+Example: Sending an email
+
+1.  Register user
+2.  Create in DB
+3.  Send welcome email -> This process can fail for too many reasons.
+
+- Prevent email send
+- Ensure `send_welcome_email()` called correctly
+
+### How to mock code?
+
+1. Use `unittest.mock`
+   - `MagicMock / Mock` - Replace real objects
+   - `patch`- Overrides code for tests
