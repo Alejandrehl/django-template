@@ -52,3 +52,16 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 - Charged per minutes
 - 2000 free minutes
 - Various plans available
+
+### How we'll configure Github Actions?
+
+1. Create a config file at `.github/workflows/checks.yml`
+   - Set trigger
+   - Add steps for running testing and linting
+2. Configure Docker Hub Auth
+
+### Docker Hub
+
+1. Needed to pull base images
+2. Rate limits
+   - Anonymous: 100/6h
