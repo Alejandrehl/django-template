@@ -100,9 +100,51 @@ Out of the box in Django.
    - Test modules start with `test_`
    - Test directories must contain `__init__.py`
 
-### Test Database
+### Test database
 
 1. Test code that uses the DB
 2. Specific database for tests
    - Cycle: Runs test -> Clears data -> Runs tests -> Clears data -> etc
 3. Happends for every test (by default)
+
+### Test classes
+
+1. SimpleTestCase
+   - No database integration
+   - Usefulf if no database is required for yout test
+   - Save time executing tests
+2. TestCase
+   - Database integration
+   - Useful for testing code that uses the database
+
+### Writing tests
+
+1. Import test class
+   - SimpleTestCase - No Database
+   - TestCase - Database
+2. Import objects to test
+3. Define test class
+4. Add test method
+5. Setup inputs
+6. Execute code to be tested
+7. Check output
+
+```python
+"""
+Unit tests for views
+"""
+
+from django.test import SimpleTestCase
+
+from app_two import views
+
+class ViewTests(SimpleTestCase):
+
+   def test_make_list_unique(self):
+      """ Test making a list unitque. """
+      sample_items = [1, 1, 2, 2, 3, 4, 5, 5]
+
+      res = views.remove_duplicates(sample_items)
+
+      self.assertEqual(res, [1, 2, 3, 4, 5])
+```
