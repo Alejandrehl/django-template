@@ -178,3 +178,38 @@ Example: Sending an email
 1. Use `unittest.mock`
    - `MagicMock / Mock` - Replace real objects
    - `patch`- Overrides code for tests
+
+## Testing APIs
+
+- Make actual requests
+- Check result
+
+### Django REST Framework APIClient
+
+- Based on the Django's TestClient
+- Make requests
+- Check result
+- Override authentication
+
+## Using the APIClient
+
+1. Import `APIClient`
+2. Create client
+3. Make request
+4. Check result
+
+```python
+from django.test import SimpleTestCase
+from rest_framework.test import APIClient
+
+class TestViews(SimpleTestCase):
+
+   def test_get_greetings(self):
+      """ Test getting greetings """
+      client = APIClient()
+      res = client.get('/greetings/')
+
+      self.assertEqual(res.status_code, 200)
+      self.assertEqual(res.data, ["Hello!", "Bonjour!", "Hola!"])
+
+```
