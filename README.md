@@ -78,3 +78,23 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 1. Register account on [https://hub.docker.com/](https://hub.docker.com/)
 2. Use docker login during our job
 3. Add secrets to GitHub project
+
+# Django Test Framework
+
+Out of the box in Django.
+
+1. Based on the unittest library
+2. Django adds features
+   - Test client - dummy web browser
+   - Simulate authentication
+   - Temporary database
+3. Django Rest Framework adds features|
+   - API test client
+
+### Where do you put tests?
+
+1. Placeholder tests.py added to each app
+2. Or, creaye tests/ subdirectory to split tests up
+3. Keep in mind:
+   - Only use tests.py or tests/ directory (not both)
+   - Test directories must contain `__init__.py`
