@@ -9,6 +9,7 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 3. [Flake8](https://pypi.org/project/flake8/): Python linter.
    - Flake8 config file: `app/.flake8`
    - Command to run Flake8: `docker-compose run --rm app sh -c "flake8"`
+4. [Psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL driver.
 
 ## Docker :whale:
 
