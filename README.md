@@ -96,5 +96,6 @@ Out of the box in Django.
 1. Placeholder tests.py added to each app
 2. Or, creaye tests/ subdirectory to split tests up
 3. Keep in mind:
-   - Only use tests.py or tests/ directory (not both)
+   - Only use `tests.py` or `tests/` directory (not both)
+   - Test modules start with `test_`
    - Test directories must contain `__init__.py`
