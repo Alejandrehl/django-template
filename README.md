@@ -28,7 +28,7 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 3. Create Django project: `docker-compose run --rm app sh -c "django-admin startproject app ."`
 4. Start services: `docker-compose up`
 
-## Github Actions
+# Github Actions
 
 - Automation tool
 - Similar to Travis-CI, Gitlab CI/CD, Jenkins
