@@ -38,3 +38,8 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
   1.  Deployment
   2.  Code linting
   3.  Unit Tests
+
+### How it works?
+
+1. Trigger: Push to Github.
+2. Job: Run unit tests.
