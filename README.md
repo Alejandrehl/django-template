@@ -51,3 +51,4 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
 
 - Charged per minutes
 - 2000 free minutes
+- Various plans available
