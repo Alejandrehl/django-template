@@ -213,3 +213,20 @@ class TestViews(SimpleTestCase):
       self.assertEqual(res.data, ["Hello!", "Bonjour!", "Hola!"])
 
 ```
+
+## Database
+
+1. Configure Django in `settings.py`
+   - Tell Django how to connect
+2. Install database adaptor dependencies
+   - Install the tool Django uses to connect
+3. Update Python requirements
+
+### Django needs to know...
+
+1. Engine (Type of database)
+2. Hostname (IP or domain name for database)
+3. Port
+4. Database Name
+5. Username
+6. Password
