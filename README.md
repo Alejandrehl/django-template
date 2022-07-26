@@ -40,6 +40,7 @@ After add a new dependency you need to restart all services:
 2. Build Docker Compose: `docker-compose build`
 3. Create Django project: `docker-compose run --rm app sh -c "django-admin startproject app ."`
 4. Start services: `docker-compose up`
+5. Create a new `core` app: `docker-compose run --rm app sh -c "python manage.py startapp core"`
 
 # Github Actions :rocket:
 
