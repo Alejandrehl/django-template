@@ -67,3 +67,8 @@ Backend created using Django Rest Framework, Docker &amp; PostgreSQL :rocket:
    - Anonymous: 100/6h
    - Authenticated: 200/6h
 3. GitHub Actions uses shared IP addresses
+   - Limit applied to all users
+4. Authenticate with Docker Hub
+   - 200 pulls per 6h all to ourselves
+   - More than enough for most projects
+5. Additional plans available
