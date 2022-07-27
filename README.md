@@ -228,7 +228,7 @@ class TestViews(SimpleTestCase):
 
 ```
 
-## Database
+# Database
 
 1. Configure Django in `settings.py`
    - Tell Django how to connect
@@ -256,3 +256,34 @@ DATABASES = {
     }
 }
 ```
+
+### Django ORM
+
+- Object Relational Mapper (ORM)
+- Abstraction layer for data
+  - Django handles database structure and changes
+  - Focus on Python code
+  - Use any database (within reason)
+
+### Usign the ORM
+
+1. Define models
+2. Generate migration files
+3. Setup database
+4. Store data
+
+### Models
+
+- Each model maps to a table
+- Models contains
+  - Name
+  - Fields
+  - Other metadata
+  - Custom Python Logic
+
+### Creating migrations
+
+1. Ensure app is enabled in `settings.py`
+2. Use Django CLI
+   - `python manage.py makemigrations`
+   - `python manage.py migrate`
