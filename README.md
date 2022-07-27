@@ -288,3 +288,48 @@ DATABASES = {
 2. Use Django CLI
    - `python manage.py makemigrations`
    - `python manage.py migrate`
+
+# Django Authentication
+
+- Built in authentication system
+- Framework for basic features
+  - Registration
+  - Login
+  - Auth
+- Integrates with Django admin
+
+### Django user model
+
+- Foundation of the Django auth system
+- Default user model
+  - Username istead of email
+  - Not easy to customise
+- Create a custom model for new projects
+  - Allows for using email instead of Username
+  - Future proof project for later changes to user model
+
+### How to customise user model?
+
+1. Create model
+   - Base from AbstractBaseUser and PermissionsMixin
+2. Create custom manager
+   - User for CLI integration
+3. Set AUTH_USER_MODEL in settings.py
+4. Create and run migrations
+
+### AbstractBaseUser
+
+- Provider features for authentication
+- Doesn't include fields
+
+### PermissionsMixin
+
+- Support for Django permission system
+- Includes fields and methods
+
+### Common issues
+
+- Running migrations before setting custom model
+  - Set custom model first and
+- Typos in config
+- Indentation in manager or models
