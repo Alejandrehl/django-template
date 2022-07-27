@@ -333,3 +333,27 @@ DATABASES = {
   - Set custom model first and
 - Typos in config
 - Indentation in manager or models
+
+## Design custom user model
+
+- email (EmailField)
+- name (Charfield)
+- is_active (BooleanField)
+- is_staff (BooleanField)
+
+### User model manager
+
+- Used to manage objects
+- Custom logic for creating objects
+  - Hash password
+- Used by Django CLI
+  - Create superuser
+
+### BaseUserManager
+
+- Base class for managing users
+- Useful helper methods
+  - `normalize_email`: for storing emails consistently
+- Methods we'll define:
+  - `create_user`: called when creating user
+  - `create_superuser`: used by the CLI to create a superuser (admin)
