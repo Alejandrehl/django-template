@@ -357,3 +357,9 @@ DATABASES = {
 - Methods we'll define:
   - `create_user`: called when creating user
   - `create_superuser`: used by the CLI to create a superuser (admin)
+
+# Django Admin
+
+- Graphical User Interface for models
+  - Create, Read, Update, Delete
+- Very little coding required
