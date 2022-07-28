@@ -363,3 +363,35 @@ DATABASES = {
 - Graphical User Interface for models
   - Create, Read, Update, Delete
 - Very little coding required
+
+## How to enable Django Admin?
+
+- Enabled per model
+- Inside `admin.py`
+  - Example: `admin.site.register(Recipe)`
+
+### Customising
+
+- Create class based off `ModelAdmin` or `UserAdmin`
+- Override/set class variables
+
+Example:
+
+```python
+class UserAdmin(BaseUserAdmin):
+   """Define the admin pages for users."""
+   ordering = ['id']
+   list_display = ['email', 'name']
+   fieldsets = (
+      (None, {'fields': ('email', 'password')}),
+   )
+   readonly_fields = ['last_login']
+   add_fieldsets = (
+      (None, {
+         'classes': ('wide',),
+         'fields': (
+            'email',
+         )
+      })
+   )
+```
