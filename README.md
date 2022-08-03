@@ -23,6 +23,7 @@ After add a new dependency you need to restart all services:
    - Command to run Flake8: `docker-compose run --rm app sh -c "flake8"`
 4. [Psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL driver.
 5. [Autopep8](https://pypi.org/project/autopep8/): Code formatter.
+6. [DRF Spectacular](https://pypi.org/project/drf-spectacular/): OpenAPI Schema generator for Django Rest Framework.
 
 ## Docker :whale:
 
